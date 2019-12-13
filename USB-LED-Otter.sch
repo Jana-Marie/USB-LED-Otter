@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32F0:STM32F072C8Ux U2
-U 1 1 5DAD86AD
-P 5850 3150
-F 0 "U2" H 5800 4828 50  0000 C CNN
-F 1 "STM32F072C8Ux" H 5800 4737 50  0000 C CNN
-F 2 "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm" H 5250 1750 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00090510.pdf" H 5850 3150 50  0001 C CNN
-	1    5850 3150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Regulator_Linear:MCP1700-3302E_SOT23 U1
 U 1 1 5DAD890C
 P 2850 1450
@@ -160,28 +149,8 @@ Text GLabel 2450 3000 2    50   Input ~ 0
 USB_P
 Text GLabel 2450 3100 2    50   Input ~ 0
 USB_N
-Wire Wire Line
-	6050 1650 5950 1650
-Connection ~ 5750 1650
-Wire Wire Line
-	5750 1650 5650 1650
 Connection ~ 5850 1650
-Wire Wire Line
-	5850 1650 5750 1650
-Connection ~ 5950 1650
-Wire Wire Line
-	5950 1650 5850 1650
-Wire Wire Line
-	6050 4650 5950 4650
-Connection ~ 5750 4650
-Wire Wire Line
-	5750 4650 5650 4650
 Connection ~ 5850 4650
-Wire Wire Line
-	5850 4650 5750 4650
-Connection ~ 5950 4650
-Wire Wire Line
-	5950 4650 5850 4650
 $Comp
 L power:GND #PWR0108
 U 1 1 5DAD982A
@@ -459,4 +428,37 @@ Text GLabel 6450 4250 2    50   Input ~ 0
 SWDIO
 Text GLabel 6450 4350 2    50   Input ~ 0
 SWCLK
+$Comp
+L MCU_ST_STM32F0:STM32F072CBUx U2
+U 1 1 5DD36C6F
+P 5850 3150
+F 0 "U2" H 5800 4831 50  0000 C CNN
+F 1 "STM32F072CBUx" H 5800 4740 50  0000 C CNN
+F 2 "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm" H 5250 1750 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00090510.pdf" H 5850 3150 50  0001 C CNN
+	1    5850 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1650 5850 1650
+Wire Wire Line
+	5750 4650 5850 4650
+Wire Wire Line
+	5650 4650 5750 4650
+Wire Wire Line
+	5850 4650 5950 4650
+Connection ~ 5750 4650
+Connection ~ 5950 4650
+Wire Wire Line
+	5950 4650 6050 4650
+Wire Wire Line
+	5650 1650 5750 1650
+Wire Wire Line
+	5850 1650 5950 1650
+Connection ~ 5750 1650
+Wire Wire Line
+	5750 1650 5850 1650
+Connection ~ 5950 1650
+Wire Wire Line
+	5950 1650 6050 1650
 $EndSCHEMATC
