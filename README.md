@@ -1,6 +1,5 @@
 # USB-LED-Otter
-
-Tiny USB to adressable LED adapter that fits in your USB port :3
+The tiny USB to adressable LED adapter that fits in your USB port :3
 
 ## Usage
 
