@@ -456,8 +456,6 @@ Wire Wire Line
 Wire Wire Line
 	5850 1650 5950 1650
 Connection ~ 5750 1650
-Wire Wire Line
-	5750 1650 5850 1650
 Connection ~ 5950 1650
 Wire Wire Line
 	5950 1650 6050 1650
